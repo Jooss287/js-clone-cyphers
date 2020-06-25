@@ -5,11 +5,29 @@
         <title> 사이퍼즈 전적검색기</title>
         <link href="css/lib/unnecessary-html.css" rel="stylesheet" type="text/css">
         <link href="css/layout/layout.css" rel="stylesheet" type="text/css">
-        <link href="css/contents/index.css" rel="stylesheet" type="text/css">
         <link href="css/contents/header.css" rel="stylesheet" type="text/css">
+        <link href="css/contents/before-search.css" rel="stylesheet" type="text/css">
     </head>
-    <frameset rows="150, *">
-        <frame src="header.html" name="header" noresize></frame>
-        <frame src="index-body.html" name="index-body" noresize></frame>
-    </frameset>
+    <body>
+        <div class="layout-header">
+            <div class="header-logo js-logo">
+                <img src="img/cyphers_logo.png" style="cursor:pointer">
+            </div>
+            <div class="header-etc">
+                login, etc.
+            </div>
+        </div>
+
+        <div class="layout-body">
+            <div class="before-search">
+                <form class="search-contents js-search">
+                    <input type="text" placeholder="input nickname">
+                    <input type="submit" value="검색">
+                </form>
+            </div>
+        </div>
+
+        <script src="js/header.js"></script>
+        <script src="js/search-contents.js"></script>
+    </body>
 </html>
