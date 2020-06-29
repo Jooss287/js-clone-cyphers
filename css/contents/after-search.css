@@ -9,24 +9,39 @@
     flex-direction: column;
 }
 .after-search-box {
+    height: 50px;
     background-color: gold;
+    line-height: 50px;
 
+    text-align: center;
     margin-bottom: 100px;
+}
+.after-search-box input[type="text"] {
+    width: 300px;
+    height: 30px;
+    border-radius: 30px;
+    text-indent: 10px;
+}
+.after-search-box input[type="submit"] {
+    height: 35px;
 }
 
 .userInfo-layout {
     background-color: green;
     display: grid;
-    grid-template-rows: 100px 200px;
+    grid-template-rows: 30px 50px;
     grid-template-columns: repeat(3, 1fr);
 }
 .userInfo-grid-title {
+    line-height: 30px;
     color:red;
     text-align: center;
+    border: 1px solid powderblue;
 }
 .userInfo-grid-contents {
     color: yellow;
     text-align: center;
+    border: 1px solid darkblue;
 }
 
 .matchInfo-layout {
