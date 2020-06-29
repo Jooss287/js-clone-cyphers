@@ -1,5 +1,35 @@
 @charset "UTF-8";
 
+.after-search-layout {
+    height: 100%;
+    width: 80%;
+    background-color: powderblue;
+
+    display:flex;
+    flex-direction: column;
+}
 .after-search-box {
-    background-color: white;
+    background-color: gold;
+
+    margin-bottom: 100px;
+}
+
+.userInfo-layout {
+    background-color: green;
+    display: grid;
+    grid-template-rows: 100px 200px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.userInfo-grid-title {
+    color:red;
+    text-align: center;
+}
+.userInfo-grid-contents {
+    color: yellow;
+    text-align: center;
+}
+
+.matchInfo-layout {
+    background-color: indianred;
+    display: grid;
 }
