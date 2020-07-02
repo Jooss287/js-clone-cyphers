@@ -3,11 +3,30 @@
 .before-search {
     max-width: 50%;
 
-    width: 500px;
-    height: 100px;
+    width: 560px;
+    height: 70px;
 
-    line-height: 100px;
+    line-height: 70px;
     text-align: center;
-    
+
     background-color: white;
+    border-radius: 35px;
+}
+
+.before-search input[type="submit"] {
+    width: 65px;
+    height: 65px;
+    font-size: 200%;
+
+    background-color: transparent;
+    border: 0px
+}
+.before-search input[type="text"] {
+    width: 300px;
+    height: 50px;
+    
+    
+    font-size: 200%;
+    background-color: transparent;
+    border: 0px;
 }
