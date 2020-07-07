@@ -2,16 +2,34 @@ const searchForm = document.querySelector(".js-search");
 const searchBtn = searchForm.querySelector("input[type='submit']");
 const searchTxt = searchForm.querySelector("input[type='text']");
 
-function onClickSearch() {
-    console.log("clicked");
-    
-    var searchLink = 'user-search.html';
-    window.location.href = searchLink;
-}
+const neopleUrl = "https://api.neople.co.kr/cy/"
+const apikey = "0rYk7DYbNFelyQguZRmwhWxF1QhZ0yJP";
+
+const tempAPI = "https://api.neople.co.kr/cy/players?nickname=papico&wordType=full&apikey=0rYk7DYbNFelyQguZRmwhWxF1QhZ0yJP"
 
 function submitNickname(event) {
     event.preventDefault();
-    onClickSearch();
+    
+    const nickName = searchTxt.value;
+
+    console.log(nickName);
+
+    fetch(tempAPI);
+
+    
+    /*fetch(tempAPI).then(function(response) {
+        console.log(response);
+    }).catch(function(error) {
+        console.log(error);
+    });*/
+
+    
+    
+    //https://api.neople.co.kr/cy/players?nickname=<nickname>&wordType=<wordType>&apikey=0rYk7DYbNFelyQguZRmwhWxF1QhZ0yJP
+    
+    
+    //var searchLink = 'user-search.html';
+    //window.location.href = searchLink;
 }
 
 function init() {

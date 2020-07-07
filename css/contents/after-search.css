@@ -81,6 +81,7 @@
 }
 .Info-grid-title {
     font-weight: bold;
+    line-height: 33px;
     grid-column: 1 / 4;
     font-size: 120%;
 }
@@ -97,6 +98,12 @@
 }
 
 .matchInfo-layout {
+    width: 100%;
+    height: 1375px;
     background-color: indianred;
     display: grid;
+}
+
+.matchInfo-title-layout {
+    background-color: teal;
 }
